@@ -1,6 +1,6 @@
 {
 	"name": "clearsearch",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"title": "jQuery ClearSearch",
 	"author": {
 		"name": "Was los.de GmbH & Co. KG",
@@ -8,7 +8,7 @@
 	},
 	"licenses": [{
 		"type": "BSD-3-Clause",
-		"url": "https://github.com/waslos/jquery-clearsearch/blob/v1.0.0/LICENSE.md"
+		"url": "https://github.com/waslos/jquery-clearsearch/blob/v1.0.1/LICENSE.md"
 	}],
 	"dependencies": {
 		"jquery": ">=1.7.2"
