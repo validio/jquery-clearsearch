@@ -1,0 +1,22 @@
+{
+	"name": "clearsearch",
+	"version": "1.0.0",
+	"title": "jQuery ClearSearch",
+	"author": {
+		"name": "Was los.de GmbH & Co. KG",
+		"url": "https://github.com/waslos"
+	},
+	"licenses": [{
+		"type": "BSD-3-Clause",
+		"url": "https://github.com/waslos/jquery-clearsearch/blob/v1.0.0/LICENSE.md"
+	}],
+	"dependencies": {
+		"jquery": ">=1.7.2"
+	},
+	"description": "A search input field plugin for jQuery.",
+	"keywords": ["search", "form", "input", "clear"],
+	"homepage": "https://github.com/waslos/jquery-clearsearch",
+	"docs": "https://github.com/waslos/jquery-clearsearch",
+	"demo": "http://jsfiddle.net/wldaunfr/FERw3"
+	"bugs": "https://github.com/waslos/jquery-clearsearch/issues",
+}
