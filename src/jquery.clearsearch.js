@@ -1,5 +1,5 @@
 /* ============================================================================
- * jquery.clearsearch.js v1.0.1
+ * jquery.clearsearch.js v1.0.2
  * https://github.com/waslos/jquery-clearsearch
  * ============================================================================
  * Copyright (c) 2012, Was los.de GmbH & Co. KG
