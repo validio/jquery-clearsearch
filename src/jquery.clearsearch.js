@@ -84,7 +84,7 @@
 					}
 
 					btn.on('click', clearField);
-					$this.on('keyup keydown change', triggerBtn);
+					$this.on('keyup keydown change focus', triggerBtn);
 					triggerBtn();
 				});
 	};
