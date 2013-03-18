@@ -37,7 +37,8 @@
 			'clearClass' : 'clear_input',
 			'divClass' : this.clearClass + '_div',
 			'focusAfterClear' : true,
-			'linkText' : '&times;'
+			'linkText' : '&times;',
+			'distanceFromEdge' : 5
 		}, options);
 		return this.each(function() {
 					var $this = $(this), btn;
@@ -75,11 +76,10 @@
 					}
 
 					function update() {
-						var width = $this.outerWidth(), height = $this
-								.outerHeight();
+						var height = $this.outerHeight();
 						btn.css({
 							top : height / 2 - btn.height() / 2,
-							left : width - height / 2 - btn.height() / 2
+							right : settings.distanceFromEdge
 						});
 					}
 
