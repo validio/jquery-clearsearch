@@ -1,5 +1,5 @@
 /* ============================================================================
- * jquery.clearsearch.js v1.0.2
+ * jquery.clearsearch.js v1.0.3
  * https://github.com/waslos/jquery-clearsearch
  * ============================================================================
  * Copyright (c) 2012, Was los.de GmbH & Co. KG
@@ -35,16 +35,16 @@
 	$.fn.clearSearch = function(options) {
 		var settings = $.extend({
 			'clearClass' : 'clear_input',
-			'divClass' : this.clearClass + '_div',
 			'focusAfterClear' : true,
 			'linkText' : '&times;'
 		}, options);
 		return this.each(function() {
-					var $this = $(this), btn;
+					var $this = $(this), btn,
+						divClass = settings.clearClass + '_div';
 
-					if (!$this.parent().hasClass(settings.divClass)) {
+					if (!$this.parent().hasClass(divClass)) {
 						$this.wrap('<div style="position: relative;" class="'
-							+ settings.divClass + '">' + $this.html() + '</div>');
+							+ divClass + '">' + $this.html() + '</div>');
 						$this.after('<a style="position: absolute; cursor: pointer;" class="'
 							+ settings.clearClass + '">' + settings.linkText + '</a>');
 					}
