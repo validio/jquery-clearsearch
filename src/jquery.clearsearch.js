@@ -42,13 +42,17 @@
 					var $this = $(this), btn,
 						divClass = settings.clearClass + '_div';
 
-					if (!$this.parent().hasClass(divClass)) {
+					if ($this.parent().css('position') !== 'relative') {
 						$this.wrap('<div style="position: relative;" class="'
 							+ divClass + '">' + $this.html() + '</div>');
-						$this.after('<a style="position: absolute; cursor: pointer;" class="'
-							+ settings.clearClass + '">' + settings.linkText + '</a>');
+						console.warn('clearSearch input was wrapped with div');
+					} else if (!$this.parent().is(divClass)) {
+						$this.parent().addClass(divClass);
 					}
-					btn = $this.next();
+
+					$this.parent().append('<a style="position: absolute; cursor: pointer;" class="'
+						+ settings.clearClass + '">' + settings.linkText + '</a>');
+					btn = $this.parent().find('.' + settings.clearClass);
 
 					function clearField() {
 						$this.val('').change();
@@ -79,7 +83,8 @@
 								.outerHeight();
 						btn.css({
 							top : height / 2 - btn.height() / 2,
-							left : width - height / 2 - btn.height() / 2
+							left : width - height / 2 - btn.height() / 2,
+							'z-index': $this.css('z-index') || 'initial'
 						});
 					}
 
